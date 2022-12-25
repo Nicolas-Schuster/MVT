@@ -18,8 +18,12 @@ from django.urls import path
 
 from MVT_Nicolas_Schuster.views import hola_mundo, madre
 
+from MVT.views import crear_familliar, list_famillia
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hola/', hola_mundo),
     path('madre/', madre),
+    path('crear-familliar/', crear_familliar),
+    path('list-famillia/', list_famillia)
 ]
